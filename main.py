@@ -12,8 +12,8 @@ def selection_sort(numbers):
     numbers_length = len(numbers)
 
     for i in range(numbers_length):
-            index_s_number = find_smallest_index(numbers)
-            sorted_numbers.append(numbers.pop(index_s_number))
+        index_s_number = find_smallest_index(numbers)
+        sorted_numbers.append(numbers.pop(index_s_number))
 
 
     return sorted_numbers
