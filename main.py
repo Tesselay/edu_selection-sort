@@ -7,12 +7,15 @@ def find_smallest_index(numbers):
     return numbers.index(smallest_val)
 
 
-def iteration():
-    pass
+def selection_sort(numbers):
+    sorted_numbers = []
+    numbers_length = len(numbers)
 
+    for i in range(numbers_length):
+            index_s_number = find_smallest_index(numbers)
+            sorted_numbers.append(numbers.pop(index_s_number))
 
-def selection_sort():
-    pass
+    return sorted_numbers
 
 
 if __name__ == '__main__':
