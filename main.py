@@ -2,8 +2,9 @@ NUMBER_COMPARED = 0
 NUMBER_SWITCHED = 0
 
 
-def find_smallest_number():
-    pass
+def find_smallest_index(numbers):
+    smallest_val: int = min(numbers)
+    return numbers.index(smallest_val)
 
 
 def iteration():
