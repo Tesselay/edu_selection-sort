@@ -3,8 +3,15 @@ COUNT_MOVED = 0
 
 
 def find_smallest_index(numbers):
-    smallest_val: int = min(numbers)
-    return numbers.index(smallest_val)
+    smallest_value = numbers[0]
+    index = -1          # '-1' to target var left when the last value has to be selected
+    for i in range(1, len(numbers) - 1):
+        print(i)
+        if numbers[i] < smallest_value:
+            smallest_value = numbers[i]
+            index = i
+
+    return index
 
 
 def selection_sort(numbers):
@@ -18,7 +25,6 @@ def selection_sort(numbers):
         COUNT_MOVED += 1
         index_s_number = find_smallest_index(numbers)
         sorted_numbers.append(numbers.pop(index_s_number))
-
 
     return sorted_numbers
 
